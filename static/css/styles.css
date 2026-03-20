@@ -1,0 +1,76 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 { color: #1877f2; }
+
+.controls {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+input { padding: 10px; border: 1px solid #ddd; border-radius: 4px; width: 250px; }
+
+button {
+    padding: 10px 20px;
+    background: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#escenario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.columna { display: flex; flex-direction: column; gap: 8px; }
+
+.capa {
+    width: 350px;
+    padding: 12px;
+    background: white;
+    border: 1px solid #ccd0d5;
+    border-radius: 6px;
+    font-size: 0.85em;
+    transition: all 0.3s ease;
+    opacity: 0.6;
+}
+
+/* Clases de animación */
+.activa {
+    opacity: 1;
+    transform: scale(1.03);
+    border-color: #1877f2;
+    background-color: #e7f3ff;
+    box-shadow: 0 0 10px rgba(24, 119, 242, 0.3);
+}
+
+.flecha-red {
+    font-size: 2em;
+    color: #ccd0d5;
+    transition: color 0.5s;
+}
+
+.red-viva {
+    color: #42b72a;
+    animation: blink 0.5s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0.5; }
+}
